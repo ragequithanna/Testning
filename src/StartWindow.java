@@ -33,6 +33,7 @@ public class StartWindow extends javax.swing.JFrame {
         lblEpost = new javax.swing.JLabel();
         lblLosenord = new javax.swing.JLabel();
         lblValkommenMiB = new javax.swing.JLabel();
+        btnInLogg = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -55,6 +56,8 @@ public class StartWindow extends javax.swing.JFrame {
         lblValkommenMiB.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         lblValkommenMiB.setText("Välkommen till MiB Scandinavia");
 
+        btnInLogg.setText("Logga in");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -75,7 +78,8 @@ public class StartWindow extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(cboxVadArDU, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtfEpost, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(pwfLosenord, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(pwfLosenord, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnInLogg)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(168, 168, 168)
                         .addComponent(lblLoggaIn)))
@@ -100,7 +104,9 @@ public class StartWindow extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblLosenord)
                     .addComponent(pwfLosenord, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(70, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(btnInLogg)
+                .addContainerGap(29, Short.MAX_VALUE))
         );
 
         pack();
@@ -146,6 +152,7 @@ public class StartWindow extends javax.swing.JFrame {
 //    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnInLogg;
     private javax.swing.JComboBox<String> cboxVadArDU;
     private javax.swing.JLabel lblEpost;
     private javax.swing.JLabel lblLoggaIn;

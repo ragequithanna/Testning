@@ -28,6 +28,7 @@ public class AdminWindow extends javax.swing.JFrame {
         lblValkommenAdmin = new javax.swing.JLabel();
         cboxAdmin = new javax.swing.JComboBox<>();
         lblVadVillDuAdmin = new javax.swing.JLabel();
+        btnStang = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -43,6 +44,13 @@ public class AdminWindow extends javax.swing.JFrame {
 
         lblVadVillDuAdmin.setText("Vad vill du göra?");
 
+        btnStang.setText("Stäng Fönster");
+        btnStang.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnStangActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -50,14 +58,20 @@ public class AdminWindow extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(96, 96, 96)
-                        .addComponent(lblValkommenAdmin))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(126, 126, 126)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(cboxAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblVadVillDuAdmin))))
-                .addContainerGap(96, Short.MAX_VALUE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(96, 96, 96)
+                                .addComponent(lblValkommenAdmin))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(126, 126, 126)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(cboxAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblVadVillDuAdmin))))
+                        .addGap(0, 90, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(btnStang)))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -68,7 +82,9 @@ public class AdminWindow extends javax.swing.JFrame {
                 .addComponent(lblVadVillDuAdmin)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(cboxAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(142, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 113, Short.MAX_VALUE)
+                .addComponent(btnStang)
+                .addContainerGap())
         );
 
         pack();
@@ -78,9 +94,14 @@ public class AdminWindow extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_cboxAdminActionPerformed
 
+    private void btnStangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStangActionPerformed
+        dispose();
+    }//GEN-LAST:event_btnStangActionPerformed
+
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnStang;
     private javax.swing.JComboBox<String> cboxAdmin;
     private javax.swing.JLabel lblVadVillDuAdmin;
     private javax.swing.JLabel lblValkommenAdmin;

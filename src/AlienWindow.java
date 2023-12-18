@@ -28,6 +28,7 @@ public class AlienWindow extends javax.swing.JFrame {
         lblValkommenAlien = new javax.swing.JLabel();
         btnAndraLosenord = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        btnStang = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -37,6 +38,13 @@ public class AlienWindow extends javax.swing.JFrame {
         btnAndraLosenord.setText("Ändra lösenord");
 
         jButton2.setText("Områdesasvarig Agent");
+
+        btnStang.setText("Stäng Fönster");
+        btnStang.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnStangActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -49,6 +57,10 @@ public class AlienWindow extends javax.swing.JFrame {
                     .addComponent(lblValkommenAlien)
                     .addComponent(jButton2))
                 .addContainerGap(177, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnStang)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -59,16 +71,23 @@ public class AlienWindow extends javax.swing.JFrame {
                 .addComponent(btnAndraLosenord)
                 .addGap(18, 18, 18)
                 .addComponent(jButton2)
-                .addContainerGap(113, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 84, Short.MAX_VALUE)
+                .addComponent(btnStang)
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void btnStangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStangActionPerformed
+        dispose();
+    }//GEN-LAST:event_btnStangActionPerformed
+
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAndraLosenord;
+    private javax.swing.JButton btnStang;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel lblValkommenAlien;
     // End of variables declaration//GEN-END:variables

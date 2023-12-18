@@ -32,6 +32,11 @@
               </Group>
               <EmptySpace pref="177" max="32767" attributes="0"/>
           </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="btnStang" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
@@ -43,7 +48,9 @@
               <Component id="btnAndraLosenord" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="jButton2" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="113" max="32767" attributes="0"/>
+              <EmptySpace pref="84" max="32767" attributes="0"/>
+              <Component id="btnStang" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -66,6 +73,14 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Omr&#xe5;desasvarig Agent"/>
       </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnStang">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="St&#xe4;ng F&#xf6;nster"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnStangActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

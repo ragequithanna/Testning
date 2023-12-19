@@ -17,7 +17,7 @@ public class Start {
         });
 
         try {
-            idb = new InfDB("mibdb", "3360", "mibdba", "mibkey");
+            idb = new InfDB("mibdb", "3306", "mibdba", "mibkey");
 
         } catch (InfException ex) {
             Logger.getLogger(Start.class.getName()).log(Level.SEVERE, null, ex);

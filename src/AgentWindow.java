@@ -35,6 +35,11 @@ public class AgentWindow extends javax.swing.JFrame {
         lblVadVillDu.setText("Vad vill du göra?");
 
         cboxAgent.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Registrera", "Sökning", "Ändra" }));
+        cboxAgent.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cboxAgentActionPerformed(evt);
+            }
+        });
 
         lblValkommenAgent.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         lblValkommenAgent.setText("Välkommen Agent");
@@ -88,6 +93,10 @@ public class AgentWindow extends javax.swing.JFrame {
     private void btnStangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStangActionPerformed
         dispose();
     }//GEN-LAST:event_btnStangActionPerformed
+
+    private void cboxAgentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cboxAgentActionPerformed
+        String valdHandling = (String) cboxAgent.getSelectedItem();
+    }//GEN-LAST:event_cboxAgentActionPerformed
 
     /**
      * @param args the command line arguments

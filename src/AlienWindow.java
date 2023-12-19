@@ -36,6 +36,11 @@ public class AlienWindow extends javax.swing.JFrame {
         lblValkommenAlien.setText("Välkommen Alien");
 
         btnAndraLosenord.setText("Ändra lösenord");
+        btnAndraLosenord.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAndraLosenordActionPerformed(evt);
+            }
+        });
 
         jButton2.setText("Områdesasvarig Agent");
 
@@ -82,6 +87,10 @@ public class AlienWindow extends javax.swing.JFrame {
     private void btnStangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStangActionPerformed
         dispose();
     }//GEN-LAST:event_btnStangActionPerformed
+
+    private void btnAndraLosenordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAndraLosenordActionPerformed
+            // TODO add your handling code here:
+    }//GEN-LAST:event_btnAndraLosenordActionPerformed
 
     
 

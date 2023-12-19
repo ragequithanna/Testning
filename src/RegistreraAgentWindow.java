@@ -40,6 +40,7 @@ public class RegistreraAgentWindow extends javax.swing.JFrame {
         lblOmrade1 = new javax.swing.JLabel();
         txtAnstDat = new javax.swing.JTextField();
         checkAdmin = new javax.swing.JCheckBox();
+        btnStang = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -96,6 +97,13 @@ public class RegistreraAgentWindow extends javax.swing.JFrame {
 
         checkAdmin.setText("Administratör");
 
+        btnStang.setText("Stäng fönster");
+        btnStang.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnStangActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -142,6 +150,10 @@ public class RegistreraAgentWindow extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 97, Short.MAX_VALUE)
                         .addComponent(checkAdmin)
                         .addGap(48, 48, 48))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnStang)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -181,7 +193,9 @@ public class RegistreraAgentWindow extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblEpost)
                     .addComponent(txtEpost, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(32, 32, 32))
+                .addGap(3, 3, 3)
+                .addComponent(btnStang)
+                .addContainerGap())
         );
 
         pack();
@@ -207,6 +221,10 @@ public class RegistreraAgentWindow extends javax.swing.JFrame {
     private void txtAnstDatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAnstDatActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtAnstDatActionPerformed
+
+    private void btnStangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStangActionPerformed
+        dispose();
+    }//GEN-LAST:event_btnStangActionPerformed
 
     /**
      * @param args the command line arguments
@@ -245,6 +263,7 @@ public class RegistreraAgentWindow extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnGenAgent_ID;
+    private javax.swing.JButton btnStang;
     private javax.swing.JCheckBox checkAdmin;
     private javax.swing.JComboBox<String> jcbOmråde;
     private javax.swing.JLabel lblEpost;
